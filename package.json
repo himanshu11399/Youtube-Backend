@@ -2,14 +2,21 @@
   "name": "youtubebackend",
   "version": "1.0.0",
   "description": "a backend like Youtube",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
     "nodejs"
   ],
   "author": "Himanshu Sharma",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "touch": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
