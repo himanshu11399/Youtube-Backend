@@ -6,6 +6,15 @@ dotenv.config({
 })
 
 connectDB()
+.then(()=>{
+    app.listen(process.env.PORT ||8000,()=>{
+        console.log(`Server is running on port ${process.env.PORT || 8000}`)
+    })
+    app.on('error', (err) => {
+        console.error('Error in Express app:', err)
+        throw err
+    })
+})
 
 /*
 import express from 'express'
